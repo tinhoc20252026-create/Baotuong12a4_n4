@@ -1,0 +1,161 @@
+/* THIẾT LẬP CHUNG */
+body {
+    font-family: 'Segoe UI', Tahoma, sans-serif;
+    background-image: url(./Hinh_anh/anhdoan.png); /* Chèn ảnh nền trang web */
+    background-repeat: none;
+    margin: 0;
+    padding: 0;
+    display: flex;           /* Chia bố cục ngang */
+}
+/* 1. ĐỊNH DẠNG CÁC PHẦN CHÍNH */
+
+/* HEADER */
+#header {
+    background: linear-gradient(135deg, #004d99, #0066cc);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    border-bottom: 4px solid #ffcc00;
+}
+
+/* CONTENT */
+#content {
+    width: 80%;
+    margin: 20px;
+    background: white;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
+#footer {
+    background: #111;
+    color: #ddd;
+    padding: 20px;
+    width: 280px;          
+    font-size: 14px;
+    border-radius: 12px;
+    margin: 40px 20px;     
+    height: fit-content;  
+}
+
+/* 2. ĐỊNH DẠNG CÁC THÀNH PHẦN NỘI DUNG (Sử dụng Class) [cite: 18] */
+
+/* Định dạng cho từng bài viết */
+.bai-viet {
+    border: 1px solid #ddd; /* Đường viền [cite: 20] */
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    border-left: 5px solid #004d99; /* Trang trí viền trái */
+}
+
+/* Tiêu đề bài viết */
+.tieu-de-bai {
+    color: #cc0000; /* Màu đỏ nổi bật */
+    font-size: 24px;
+}
+
+/* Tên tác giả */
+.tac-gia {
+    font-style: italic;
+    text-align: right;
+    color: #666;
+}
+
+/* Định dạng Góc ảnh */
+.goc-anh {
+    text-align: center;
+    margin-bottom: 30px;
+    border-top: 2px dashed #004d99; /* Đường viền nét đứt phân cách */
+    padding-top: 20px;
+}
+
+.anh-minh-hoa {
+    margin: 10px;
+    border: 10px solid #746afe;
+    border-radius: 5px;
+    width: 55%; /* Ảnh chiếm 30% chiều rộng để xếp hàng ngang */
+}
+
+/* Định dạng Góc Bình luận (Form) */
+.goc-binh-luan {
+    background-color: #e6f2ff;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.nut-gui {
+    background-color: #004d99;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.nut-gui:hover {
+    background-color: #003366; /* Hiệu ứng khi di chuột */
+}
+a{
+    color:white;
+    text-decoration: none; /* Xóa gạch chân */
+}
+
+/* Thiết lập thanh điều hướng chuyển trang */
+
+header{
+    align-items: center;
+    display: flex;
+    padding: 0px 20px;
+    justify-content: space-between;
+    border-color: #004d99;
+    color:white;
+}
+header .menu{
+    width: 30%;
+    text-transform: uppercase;
+    color:white;
+}
+header ul.menu2{
+    display: flex;
+    list-style: none;
+    color:white;
+}
+header ul.menu2>li{
+    padding: 12px 20px;
+    border-right: 1px solid #fff;
+}
+header ul.menu2>li:last-child{ /* Xóa đường viền cuối */
+    border:none;
+}
+.dieuhuong{ 
+    border: 1px solid #ddd; /* Đường viền */
+    margin-bottom: 1px;
+    border-radius: 12px;
+    background-color: #fff;
+    background-color: #024e9b; }
+
+/*Thông-tin*/
+.thong-tin{
+    display: flex;
+    gap: 60px;
+    font-size: 20px;
+}
+.anh-thanh-vien{
+    margin: 10px;
+    display:flex;
+    border: 5px solid #2a2a2bc8;
+    border-radius: 5px;
+    width: 20%;
+}
